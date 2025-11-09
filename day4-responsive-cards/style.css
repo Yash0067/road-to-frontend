@@ -1,0 +1,15 @@
+:root{--bg:#0b1220;--card:#0f172a;--ink:#e5e7eb;--muted:#94a3b8}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+.header{padding:24px;text-align:center;color:var(--muted)}
+.grid{display:flex;gap:16px;max-width:980px;margin:0 auto;padding:24px;flex-wrap:wrap;justify-content:center}
+.card{flex:1 1 300px;background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:18px;box-shadow:0 12px 28px rgba(0,0,0,.35)}
+
+/* Responsive breakpoints */
+@media (max-width: 900px){
+  .card{flex-basis:45%}
+}
+@media (max-width: 560px){
+  .grid{padding:16px}
+  .card{flex-basis:100%}
+}
